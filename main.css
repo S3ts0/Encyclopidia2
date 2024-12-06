@@ -1,0 +1,134 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff4c9;
+}
+
+/* Header Styles */
+header {
+  background: #4982c2;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+/* Section Styles */
+section {
+  height: 100vh; /* Makes each section fill the screen */
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
+
+/* Page 1: Centered Content */
+#page1 .centered {
+  text-align: center;
+}
+
+/* Page 2, 3, and 4: Split Layout */
+.split {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+}
+.image-slider {
+  justify-self: center;
+  width: 70vw;
+  background-color: #333;
+  height: 80vh;
+  display: grid;
+  grid-template-columns: 35% 20% 35%;
+  gap: 5%;
+}
+.split img {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Page 5: Features with Circles */
+.features .circle-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.features .circle-wrapper {
+  text-align: center;
+  width: 100px; /* Ensure the container matches the circle size */
+}
+
+.features .circle-wrapper p {
+  margin-bottom: 10px; /* Add spacing between the text and the circle */
+  font-size: 14px; /* Adjust the text size */
+  color: #333; /* Text color */
+}
+
+.features .circle {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: #333;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  text-align: center;
+}
+
+/* Page 6: Contact Section */
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  text-align: left;
+  flex-wrap: wrap;
+}
+
+.contact img {
+  max-width: 150px;
+}
+
+.contact-details {
+  text-align: left;
+}
+
+.social-icons a {
+  display: block;
+  margin: 5px 0;
+}
+
+/* Adjust Fixed Header Spacing */
+header + section {
+  padding-top: 60px; /* Prevents content from overlapping the fixed header */
+}
