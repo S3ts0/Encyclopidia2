@@ -1,0 +1,54 @@
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #fff4c9;
+}
+
+/* Header Styles */
+header {
+  background: #4982c2;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+header nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+.video {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+/* Adjust Fixed Header Spacing */
+header + section {
+  padding-top: 60px; /* Prevents content from overlapping the fixed header */
+}

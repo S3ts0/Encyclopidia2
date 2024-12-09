@@ -23,43 +23,43 @@
     <section id="page1">
       <div class="centered">
         <h1 style="font-family: Qelistah">Encyclopidia</h1>
-        <p style="font-family: Philosopher-Regular">Your tagline goes here</p>
-        <button style="font-family: Woliu Maners Demo">Get Started</button>
+        <p style="font-family: Philosopher-Regular">The power is real. The story is forever. The time is now</p>
+        <a href="video.html"><button style="font-family: Woliu Maners Demo">Get Started</button></a>
       </div>
     </section>
 
     <!-- Page 2 -->
     <section id="page2">
-      <div class="contain1" style="height: 80vh">
-        <div class="split" style="display: grid; grid-template-rows: 65% 20%">
-          <div class="image-slider">
+      <div class="contain1" style="height: 80vh, width= 100%">
+        <div class="split">
+          <div class="image-slider" style="display: grid; grid-template-columns: 40% 10% 40% ">
             <img
-              src="images/Book Cover And postr design (2)_pages-to-jpg-0001.jpg"
-              alt="Book Cover"
+              src="images/pages-to-jpg-0001.jpg"
+              alt="front"
               style="
                 width: 100%;
-
+                height: 800px;
                 object-fit: cover;
                 background-color: aqua;
               "
             />
             <img
-              src="image2.jpg"
-              alt="Image 2"
+              src="images/pages-to-jpg-0003.jpg"
+              alt="spine"
               style="
-                background-color: red;
+                background-color: yellow;
                 width: 100%;
-                height: 100%;
+                height: 800px;
                 object-fit: cover;
               "
             />
             <img
-              src="image3.jpg"
-              alt="Image 3"
+              src="images/pages-to-jpg-0002.jpg"
+              alt="back"
               style="
-                background-color: yellow;
+                background-color: rgb(148, 148, 126);
                 width: 100%;
-                height: 100%;
+                height: 800px;
                 object-fit: cover;
               "
             />
@@ -77,11 +77,11 @@
       <div class="contain2" style="height: 80vh">
         <div class="split" style="display: grid; grid-template-rows: 65% 20%">
           <img
-            src="image4.jpg"
-            alt="Left Image"
-            style="height: 80vh; width: 40vw; background-color: brown"
+            src="images/_Booklaunch (Poster).jpg"
+            alt="poster"
+            style="height: 800px; width: 100%; background-color: brown"
           />
-          <div class="content" style="padding: 0; background-color: aqua">
+          <div class="content" style="padding: 0; background-color: #fff4c9">
             <h2>Services</h2>
             <p>Details about the services you provide.</p>
           </div>
@@ -105,7 +105,7 @@
           />
           <div class="content">
             <h2>Our Work</h2>
-            <p>Showcase your portfolio here.</p>
+            <p>This is the Thrown room that was designed by our Animator Koketso</p>
           </div>
         </div>
       </div>
@@ -149,25 +149,42 @@
 
     <!-- Page 6 -->
     <section id="page6">
-      <div class="contact">
-        <div class="contact-details">
-          <p style="font-size: 25px">Phone: <span>+123456789</span></p>
-          <p>Email: <span>email@example.com</span></p>
-          <textarea
-            placeholder="Your comments"
-            style="width: 300px; height: 300px"
-          ></textarea>
-        </div>
+      <div class="form-container">
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="message">Your Message</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" class="submit-btn">Send Message</button>
+            </div>
+        </form>
+    </div>
         <div class="social-icons">
           <a
-            href="#"
+            href="logos/facebook-logo.svg"alt="facebook"
             style="
               width: 60px;
               height: 60px;
               border-radius: 50%;
-              background-color: black;
             "
-            >Facebook</a
+            ><img src="logos/facebook-logo.svg" alt="facebook" style="width: 60px; height: 60px; border-radius: 50%;"></a
           >
           <a
             href="#"
@@ -175,19 +192,18 @@
               width: 60px;
               height: 60px;
               border-radius: 50%;
-              background-color: black;
+             
             "
-            >Twitter</a
-          >
+            ><img src="logos/twitter-logo.svg" alt="twitter" style="width: 60px; height: 60px; border-radius: 50%;"></a>
           <a
             href="#"
             style="
               width: 60px;
               height: 60px;
               border-radius: 50%;
-              background-color: black;
+              
             "
-            >Instagram</a
+            ><img src="logos/instagram-logo.svg" alt="instagram" style="width: 60px; height: 60px; border-radius: 50%;"></a
           >
         </div>
       </div>
